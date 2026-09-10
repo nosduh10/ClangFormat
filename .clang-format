@@ -182,8 +182,7 @@ IndentWidth: 4
 IndentWrappedFunctionNames: false
 LambdaBodyIndentation: Signature
 NamespaceIndentation: All
-PPIndentWidth: 1
-
+PPIndentWidth: 4 
 # Formatting additions
 FixNamespaceComments: true
 InsertNewlineAtEOF: true
