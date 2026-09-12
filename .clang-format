@@ -18,7 +18,7 @@ AlignConsecutiveDeclarations:
   Enabled: true
   AcrossEmptyLines: true
   AcrossComments: true
-  AlignFunctionDeclarations: true
+  AlignFunctionDeclarations: false
   AlignFunctionPointers: true
 
 AlignConsecutiveMacros:
@@ -42,7 +42,7 @@ AlignOperands: Align
 
 AlignTrailingComments:
   Kind: Always
-  OverEmptyLines: 2
+  OverEmptyLines: 10
   AlignPPAndNotPP: true
 
 # Allow options
@@ -78,29 +78,8 @@ BinPackParameters: false
 # Bit-fields
 BitFieldColonSpacing: After
 
-# Brace wrapping reference
-# BreakBeforeBraces: Custom
-# BraceWrapping:
-#   AfterCaseLabel: true
-#   AfterClass: true
-#   AfterEnum: true
-#   AfterExternBlock: true
-#   AfterFunction: true
-#   AfterNamespace: true
-#   AfterObjCDeclaration: true
-#   AfterStruct: true
-#   AfterUnion: true
-#   BeforeCatch: false
-#   BeforeElse: false
-#   BeforeLambdaBody: true
-#   BeforeWhile: false
-#   IndentBraces: true
-#   SplitEmptyFunction: false
-#   SplitEmptyNamespace: false
-#   SplitEmptyRecord: false
-
 # Braced list width
-BracedInitializerIndentWidth: 2
+BracedInitializerIndentWidth: 4
 
 # Line breaks
 BreakAdjacentStringLiterals: true
@@ -141,12 +120,14 @@ CompactNamespaces: false
 Cpp11BracedListStyle: Block
 
 # Pointers and qualifiers
-DerivePointerAlignment: true
+DerivePointerAlignment: false
 PointerAlignment: Left
-QualifierAlignment: Left
+QualifierAlignment: Custom 
+QualifierOrder: [inline, static, const, type, volatile]
 ReferenceAlignment: Right
 
-# Blank lines
+
+# k lines
 EmptyLineBeforeAccessModifier: Always
 EnumTrailingComma: Remove
 KeepFormFeed: false
@@ -183,6 +164,7 @@ IndentWrappedFunctionNames: false
 LambdaBodyIndentation: Signature
 NamespaceIndentation: All
 PPIndentWidth: 4 
+
 # Formatting additions
 FixNamespaceComments: true
 InsertNewlineAtEOF: true
